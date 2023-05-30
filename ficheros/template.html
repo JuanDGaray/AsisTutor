@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title:name"></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Rubik:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <style>
+    * {
+        /* Change your font family */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    :root{
+        
+        --blue: #002498;
+        --Orange:  #FF7000;
+        --Purple: #8B00FF;
+        --color_theme: var(--Orange)
+    }
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .content-table thead tr {
+        background-color: var(--color_theme);
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .content-table tbody td:nth-child(1),
+    .content-table tbody td:nth-child(){
+        text-align: center;
+    }
+    .content-table th,
+    .content-table td {
+        padding: 8px 8px;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid var(--color_theme);
+    }
+
+    .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+    }
+    .student1 td:nth-child(1) span{
+        background-image: url(./trofeo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+
+    }
+    .student3 td:nth-child(1) span{
+        background-image: url(./trofeo2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+
+    }
+    .student2 td:nth-child(1) span{
+        background-image: url(./trofeo1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+
+    }
+    .datos_ranking td:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .datos_ranking td:nth-child(3) p{
+        margin: 0;
+        }
+    .datos_ranking td:nth-child(3){
+        min-width: 145px;
+    }
+    .datos_ranking td:nth-child(3) .perfect{
+        background-image: url(./perfecto.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        top: -72px;
+        left: 52px;
+        width: 55px;
+        height: 55px;
+        transform: rotate(12deg);
+
+    }
+    .datos_ranking td:nth-child(3) .container_puntos{
+        display: flex;
+        align-items: center;
+        
+    }
+    .contain_perfet{
+        height: 0px;
+    }
+    .first_head th h1{
+        font-size: 1.9rem;
+        margin-bottom: 0 ;
+        margin-top: 0.4rem;
+    }
+    .first_head th  h2{
+        font-size: 1.3rem;
+        margin-top: 0 ;
+        margin-bottom: 0.4rem;
+    }
+    .contend_table_course th
+    {
+        background-color: #ffffff;
+        padding: 0;
+
+    }
+    .contend_table_course th:nth-child(2){
+        background-color: #f3f3f3;
+    }
+    .contend_table_course th div{
+        display: grid;
+        grid: auto-flow / 1fr 0.5fr 0.5fr;
+        justify-items: center;
+        justify-content: space-around;
+        color: black;
+        align-items: center;
+
+    }
+    .contend_table_course h1{
+        font-size: 1rem;
+        text-align: center;
+        margin: 0.2rem;
+    }
+    .contend_table_course div:nth-child(2) {
+        width: 100%;
+        border-left: 1px solid var(--color_theme);
+
+    }
+    .data_python h1{
+        font-size: 1rem;
+        font-weight: lighter;
+       
+    }
+    .data_python h1:nth-child(1n+2){
+       color: var(--color_theme);
+       font-weight: bolder;
+    }
+    </style>
+
+
+</head>
+<body>
+    <table class="Table_Course">
+        <thead>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>  
+    <table class="content-table">
+    <thead>
+        <tr class="first_head">
+            <th colspan="3">
+                <h1>Tabla General</h1>
+                <h2>Python Programming Language</h2>
+            </th>
+        </tr>
+        <tr class="contend_table_course">
+            <th colspan="3">
+                <div><h1>Ultima Lección</h1>
+                <h1>Puntos <br> Disponibles</h1>
+                <h1>% de <br> compromiso</h1>
+                </div>    
+            </th>
+        </tr>
+        <tr class="contend_table_course">
+            <th colspan="3">
+                <div class="data_python">
+                    <h1 class="last_lesson"></h1>
+                    <h1 class="point_ava"></h1>
+                    <h1 class="compromiso"></h1>
+                </div>    
+            </th>
+        </tr>
+        <tr class="title">
+            <th>Rank</th>
+            <th>Nombre</th>
+            <th>Puntaje</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="datos_ranking">
+            <td>1 <span></span></td>
+            <td>Pepito </td>
+            <td><div class="container_puntos"><p>2500</p></div><meter min="0" max="100" low="32" high="75" optimum="100" value="75"></meter><div class="contain_perfet"><div class="perfect"> </div></div> </td>
+        </tr>    
+    </tbody>
+   </table>
+</body>
+</html>
